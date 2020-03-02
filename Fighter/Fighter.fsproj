@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GodotSharp">
+      <HintPath>../.mono/assemblies/GodotSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="EcsRx.Godot">
+      <HintPath>../.mono/assemblies/EcsRx.Godot.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="EcsRxApplication.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Main\" />
+    <Folder Include="Systems\" />
+    <Folder Include="ViewResolvers\" />
+    <Folder Include="Handlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+    <Compile Include="EntityBoundfs.fs" />
+    <Compile Include="Components\MovementComponent.fs" />
+    <Compile Include="Components\InputComponent.fs" />
+    <Compile Include="Components\ViewComponent2D.fs" />
+    <Compile Include="Components\SpriteComponent.fs" />
+    <Compile Include="Components\SpriteComponent %28copy%29.fs" />
+    <Compile Include="Main\Extensions.fs" />
+    <Compile Include="Main\Applicationfs.fs" />
+    <Compile Include="Handlers\ViewHandler.fs" />
+    <Compile Include="Systems\MovementSystem.fs" />
+    <Compile Include="ViewResolvers\PlayerViewResolver.fs" />
+    <PackageReference Include="EcsRx.Infrastructure" Version="3.5.41" />
+    <PackageReference Include="ecsrx" Version="3.5.41" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="EcsRx.ReactiveData" Version="3.5.41" />
+    <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="3.5.41" />
+    <PackageReference Include="Proto.Actor" Version="0.2.0" />
+    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.5.41" />
+    <PackageReference Include="EcsRx.Plugins.Views" Version="3.5.41" />
+    <Compile Include="Playerfs.fs" />
+  </ItemGroup>
+</Project>

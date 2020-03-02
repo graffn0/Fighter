@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj": {}
+  },
+  "projects": {
+    "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj",
+        "projectName": "Fighter",
+        "projectPath": "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj",
+        "packagesPath": "/home/phalanx/.nuget/packages/",
+        "outputPath": "/home/phalanx/Desktop/Fighter/Fighter/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/phalanx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{982CAC12-572E-4AE7-BFAA-397D9D877B7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>.mono/temp/bin/$(Configuration)</OutputPath>
+    <RootNamespace>Fight</RootNamespace>
+    <AssemblyName>Fight</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>.mono/temp/obj</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Tools|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TOOLS;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GodotSharp">
+      <HintPath>$(ProjectDir)/.mono/assemblies/GodotSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GodotSharpEditor" Condition=" '$(Configuration)' == 'Tools' ">
+      <HintPath>$(ProjectDir)/.mono/assemblies/GodotSharpEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="EcsRx.MicroRx">
+      <HintPath>packages\EcsRx.MicroRx.3.5.41\lib\net46\EcsRx.MicroRx.dll</HintPath>
+    </Reference>
+    <Reference Include="EcsRx">
+      <HintPath>packages\EcsRx.3.5.41\lib\net46\EcsRx.dll</HintPath>
+    </Reference>
+    <Reference Include="EcsRx.Infrastructure">
+      <HintPath>packages\EcsRx.Infrastructure.3.5.41\lib\net46\EcsRx.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="EcsRx.Infrastructure.Ninject">
+      <HintPath>packages\EcsRx.Infrastructure.Ninject.3.5.41\lib\net46\EcsRx.Infrastructure.Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="EcsRx.Plugins.ReactiveSystems">
+      <HintPath>packages\EcsRx.Plugins.ReactiveSystems.3.5.41\lib\net46\EcsRx.Plugins.ReactiveSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="EcsRx.Plugins.Views">
+      <HintPath>packages\EcsRx.Plugins.Views.3.5.41\lib\net46\EcsRx.Plugins.Views.dll</HintPath>
+    </Reference>
+    <Reference Include="EcsRx.Godot, Version=1.0.7343.22975, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EntityBound.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Fighter\Fighter.fsproj">
+      <Project>{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}</Project>
+      <Name>Fighter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,39 @@
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fighter/Systems/MovementSystem.fs">
+    <Files>
+      <File FileName="Fighter/Main/Applicationfs.fs" Line="1" Column="1" />
+      <File FileName="Fighter/ViewResolvers/PlayerViewResolver.fs" Line="25" Column="83" />
+      <File FileName="Fighter/Handlers/ViewHandler.fs" Line="22" Column="58" />
+      <File FileName="Fighter/Main/Extensions.fs" Line="7" Column="20" />
+      <File FileName="Fighter/Components/ViewComponent2D.fs" Line="2" Column="1" />
+      <File FileName="Fighter/Playerfs.fs" Line="1" Column="1" />
+      <File FileName="Fighter/EntityBoundfs.fs" Line="11" Column="4" />
+      <File FileName="Fighter/Systems/MovementSystem.fs" Line="29" Column="39" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fight" expanded="True">
+            <Node name="Fight" expanded="True" />
+            <Node name="Fighter" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Components" expanded="True" />
+              <Node name="Main" expanded="True" />
+              <Node name="Handlers" expanded="True" />
+              <Node name="Systems" expanded="True">
+                <Node name="MovementSystem.fs" selected="True" />
+              </Node>
+              <Node name="ViewResolvers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
