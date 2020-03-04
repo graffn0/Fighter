@@ -19,5 +19,5 @@ type ViewHandler =
         member this.CreateView() =
             this.resource.Position <- Vector2()
             this.resource.SetRotation(0.0f)
-            //Applicationfs.instance.AddChild(this.resource)
+            Applicationfs.instance.AddChild(this.resource)
             this.resource :> obj

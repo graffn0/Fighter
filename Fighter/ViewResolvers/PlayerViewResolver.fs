@@ -18,7 +18,7 @@
 
     //member this.collectionManager = collectionManager
 
-    //override this.Group = new Group(typedefof<ViewComponent2D>) :> IGroup
+    //override this.Group = new Group(typedefof<ViewComponent>) :> IGroup
 
     //override this.ViewHandler = { resource = ResourceLoader.Load<KinematicBody2D>("res://Player.tscn") } :> IViewHandler
 

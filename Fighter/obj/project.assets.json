@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "EcsRx/3.5.41": {
+      "EcsRx/3.7.50": {
         "type": "package",
         "dependencies": {
-          "EcsRx.MicroRx": "3.5.41"
+          "EcsRx.MicroRx": "3.7.50"
         },
         "compile": {
           "lib/net46/EcsRx.dll": {}
@@ -14,10 +14,10 @@
           "lib/net46/EcsRx.dll": {}
         }
       },
-      "EcsRx.Infrastructure/3.5.41": {
+      "EcsRx.Infrastructure/3.7.50": {
         "type": "package",
         "dependencies": {
-          "EcsRx": "3.5.41"
+          "EcsRx": "3.7.50"
         },
         "compile": {
           "lib/net46/EcsRx.Infrastructure.dll": {}
@@ -26,10 +26,10 @@
           "lib/net46/EcsRx.Infrastructure.dll": {}
         }
       },
-      "EcsRx.Infrastructure.Ninject/3.5.41": {
+      "EcsRx.Infrastructure.Ninject/3.7.50": {
         "type": "package",
         "dependencies": {
-          "EcsRx.Infrastructure": "3.5.41",
+          "EcsRx.Infrastructure": "3.7.50",
           "Ninject": "3.3.4"
         },
         "compile": {
@@ -39,7 +39,7 @@
           "lib/net46/EcsRx.Infrastructure.Ninject.dll": {}
         }
       },
-      "EcsRx.MicroRx/3.5.41": {
+      "EcsRx.MicroRx/3.7.50": {
         "type": "package",
         "compile": {
           "lib/net46/EcsRx.MicroRx.dll": {}
@@ -48,11 +48,11 @@
           "lib/net46/EcsRx.MicroRx.dll": {}
         }
       },
-      "EcsRx.Plugins.ReactiveSystems/3.5.41": {
+      "EcsRx.Plugins.ReactiveSystems/3.7.50": {
         "type": "package",
         "dependencies": {
-          "EcsRx": "3.5.41",
-          "EcsRx.Infrastructure": "3.5.41"
+          "EcsRx": "3.7.50",
+          "EcsRx.Infrastructure": "3.7.50"
         },
         "compile": {
           "lib/net46/EcsRx.Plugins.ReactiveSystems.dll": {}
@@ -61,12 +61,12 @@
           "lib/net46/EcsRx.Plugins.ReactiveSystems.dll": {}
         }
       },
-      "EcsRx.Plugins.Views/3.5.41": {
+      "EcsRx.Plugins.Views/3.7.50": {
         "type": "package",
         "dependencies": {
-          "EcsRx": "3.5.41",
-          "EcsRx.Infrastructure": "3.5.41",
-          "EcsRx.Plugins.ReactiveSystems": "3.5.41"
+          "EcsRx": "3.7.50",
+          "EcsRx.Infrastructure": "3.7.50",
+          "EcsRx.Plugins.ReactiveSystems": "3.7.50"
         },
         "compile": {
           "lib/net46/EcsRx.Plugins.Views.dll": {}
@@ -75,7 +75,7 @@
           "lib/net46/EcsRx.Plugins.Views.dll": {}
         }
       },
-      "EcsRx.ReactiveData/3.5.41": {
+      "EcsRx.ReactiveData/3.7.50": {
         "type": "package",
         "dependencies": {
           "System.Reactive.Core": "4.1.0",
@@ -953,85 +953,85 @@
     }
   },
   "libraries": {
-    "EcsRx/3.5.41": {
-      "sha512": "e5klrDyve9jtLG32e1bPqaIf3VRocx+RVprJdgCCjoFp3taoGxE7BxXWUyDaVQnEje/Wjk35egJQvTpJhlvIsQ==",
+    "EcsRx/3.7.50": {
+      "sha512": "GW+aVEFqm2wT6Htn5j/eAqeLra3+pIbcEceu814q/Ac2bIr4UdLA7czXx6Zq9IBBYEoa36haEevhLM4h74Fl1w==",
       "type": "package",
-      "path": "ecsrx/3.5.41",
+      "path": "ecsrx/3.7.50",
       "files": [
         ".signature.p7s",
-        "ecsrx.3.5.41.nupkg.sha512",
+        "ecsrx.3.7.50.nupkg.sha512",
         "ecsrx.nuspec",
         "lib/net46/EcsRx.dll",
         "lib/netstandard2.0/EcsRx.dll"
       ]
     },
-    "EcsRx.Infrastructure/3.5.41": {
-      "sha512": "Mg/q1ihCv5INPFGCVaGeUGxszDus74s4a+C1+QZwHwSV1BHUTKW/ZtwEEW7fA3Wl7lgyvXhI+BNFA+gDBgrGlw==",
+    "EcsRx.Infrastructure/3.7.50": {
+      "sha512": "bbEaO5l5rmZQrCsgx5DgUSQwjaJVAHHipFP+yvPm8AfT/ZFy3PGVrzag8HtIai1uAk7LGzz7cnt8TjyDcBMGMg==",
       "type": "package",
-      "path": "ecsrx.infrastructure/3.5.41",
+      "path": "ecsrx.infrastructure/3.7.50",
       "files": [
         ".signature.p7s",
-        "ecsrx.infrastructure.3.5.41.nupkg.sha512",
+        "ecsrx.infrastructure.3.7.50.nupkg.sha512",
         "ecsrx.infrastructure.nuspec",
         "lib/net46/EcsRx.Infrastructure.dll",
         "lib/netstandard2.0/EcsRx.Infrastructure.dll"
       ]
     },
-    "EcsRx.Infrastructure.Ninject/3.5.41": {
-      "sha512": "0jAltQm326vr5s9e0NykzYc0b2aolXhbl0skfSqT8EEIEz+leYy/3otNcjajk43KXn4H081Gt73AsJkPDPAOJw==",
+    "EcsRx.Infrastructure.Ninject/3.7.50": {
+      "sha512": "K/vbH6YkBOV7LWRv7mWtimi6hhQ/nTc39WcP7whjeOF0uO+nibSqdpN0EXMfiUWyD/4/ZOK0Ov7V59XWVm/VJg==",
       "type": "package",
-      "path": "ecsrx.infrastructure.ninject/3.5.41",
+      "path": "ecsrx.infrastructure.ninject/3.7.50",
       "files": [
         ".signature.p7s",
-        "ecsrx.infrastructure.ninject.3.5.41.nupkg.sha512",
+        "ecsrx.infrastructure.ninject.3.7.50.nupkg.sha512",
         "ecsrx.infrastructure.ninject.nuspec",
         "lib/net46/EcsRx.Infrastructure.Ninject.dll",
         "lib/netstandard2.0/EcsRx.Infrastructure.Ninject.dll"
       ]
     },
-    "EcsRx.MicroRx/3.5.41": {
-      "sha512": "sSbAA/3hWwNxKXGawpC3+5Jvz5g4WMLjfQiHh2tITcWadPNZ19N5vGYViiR69/WNfj4lj3ygtEp13PrnDTX8WA==",
+    "EcsRx.MicroRx/3.7.50": {
+      "sha512": "kagHzlwPD7trDBN6TAnLRLr1y3ugUqD9OCiemyhLxgs/D7z4Mtxs5OaHI4rE491439jQN4DZSrSXqH32OClHiQ==",
       "type": "package",
-      "path": "ecsrx.microrx/3.5.41",
+      "path": "ecsrx.microrx/3.7.50",
       "files": [
         ".signature.p7s",
-        "ecsrx.microrx.3.5.41.nupkg.sha512",
+        "ecsrx.microrx.3.7.50.nupkg.sha512",
         "ecsrx.microrx.nuspec",
         "lib/net46/EcsRx.MicroRx.dll",
         "lib/netstandard2.0/EcsRx.MicroRx.dll"
       ]
     },
-    "EcsRx.Plugins.ReactiveSystems/3.5.41": {
-      "sha512": "R0ll6Fnf5b569qkRqMlMv6RdrGrUTFyBFsbJa1U8S7R4gPEy29BB8pteTqwfbcECok/j4cbN2OIfuxVyBX/khw==",
+    "EcsRx.Plugins.ReactiveSystems/3.7.50": {
+      "sha512": "gVjgSIQOwPMzYO+w3fy7lQOVQdMWgwvXfxmF6M2f9Po57JY3JKSURwDY+O1FsjNgIP4OH5azHlYBt5QUvKuUxA==",
       "type": "package",
-      "path": "ecsrx.plugins.reactivesystems/3.5.41",
+      "path": "ecsrx.plugins.reactivesystems/3.7.50",
       "files": [
         ".signature.p7s",
-        "ecsrx.plugins.reactivesystems.3.5.41.nupkg.sha512",
+        "ecsrx.plugins.reactivesystems.3.7.50.nupkg.sha512",
         "ecsrx.plugins.reactivesystems.nuspec",
         "lib/net46/EcsRx.Plugins.ReactiveSystems.dll",
         "lib/netstandard2.0/EcsRx.Plugins.ReactiveSystems.dll"
       ]
     },
-    "EcsRx.Plugins.Views/3.5.41": {
-      "sha512": "Howv1BtzxeWI2w9qx9+A2AT4gBV/hwE+qqdX5jbcnrpEaMOUYeyABhTN4osHS+rfRnrjFyBNBGBW4AY0lvcdEQ==",
+    "EcsRx.Plugins.Views/3.7.50": {
+      "sha512": "FwF2VvgnAY0s4dE3bP0U9kiNh6kLEAeSxcjXvOioDPN+aI/ohb9axFE1yFfRLHy4FS2m8OUYO+QjOUQmHdSagw==",
       "type": "package",
-      "path": "ecsrx.plugins.views/3.5.41",
+      "path": "ecsrx.plugins.views/3.7.50",
       "files": [
         ".signature.p7s",
-        "ecsrx.plugins.views.3.5.41.nupkg.sha512",
+        "ecsrx.plugins.views.3.7.50.nupkg.sha512",
         "ecsrx.plugins.views.nuspec",
         "lib/net46/EcsRx.Plugins.Views.dll",
         "lib/netstandard2.0/EcsRx.Plugins.Views.dll"
       ]
     },
-    "EcsRx.ReactiveData/3.5.41": {
-      "sha512": "1HxM3QXZ98g2UNZty0/dFJvYv6QleCVahMfcPyg7glvxZYwTC7P2vYNkE71kjJLKHcDB1lgoovghw/TsUepJeg==",
+    "EcsRx.ReactiveData/3.7.50": {
+      "sha512": "3Twt/5+oMtBtwq4J91t3Ms3a2TzbkmO507t5N1OzYIWzjr1d2IxqVfYH7CYZg/bENnfq7HH5G0+iAWieZ8W8ZA==",
       "type": "package",
-      "path": "ecsrx.reactivedata/3.5.41",
+      "path": "ecsrx.reactivedata/3.7.50",
       "files": [
         ".signature.p7s",
-        "ecsrx.reactivedata.3.5.41.nupkg.sha512",
+        "ecsrx.reactivedata.3.7.50.nupkg.sha512",
         "ecsrx.reactivedata.nuspec",
         "lib/net46/EcsRx.ReactiveData.dll",
         "lib/netstandard2.0/EcsRx.ReactiveData.dll"
@@ -3993,15 +3993,15 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "EcsRx.Infrastructure >= 3.5.41",
-      "EcsRx.Infrastructure.Ninject >= 3.5.41",
-      "EcsRx.Plugins.ReactiveSystems >= 3.5.41",
-      "EcsRx.Plugins.Views >= 3.5.41",
-      "EcsRx.ReactiveData >= 3.5.41",
+      "EcsRx.Infrastructure >= 3.7.50",
+      "EcsRx.Infrastructure.Ninject >= 3.7.50",
+      "EcsRx.Plugins.ReactiveSystems >= 3.7.50",
+      "EcsRx.Plugins.Views >= 3.7.50",
+      "EcsRx.ReactiveData >= 3.7.50",
       "FSharp.Core >= 4.5.2",
       "Proto.Actor >= 0.2.0",
       "System.Runtime >= 4.3.1",
-      "ecsrx >= 3.5.41"
+      "ecsrx >= 3.7.50"
     ]
   },
   "packageFolders": {
@@ -4010,11 +4010,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj",
+      "projectUniqueName": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
       "projectName": "Fighter",
-      "projectPath": "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj",
+      "projectPath": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
       "packagesPath": "/home/phalanx/.nuget/packages/",
-      "outputPath": "/home/phalanx/Desktop/Fighter/Fighter/obj/",
+      "outputPath": "/home/phalanx/Desktop/Fighter.git/Fighter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/phalanx/.config/NuGet/NuGet.Config"
@@ -4036,23 +4036,23 @@
         "dependencies": {
           "EcsRx.Infrastructure": {
             "target": "Package",
-            "version": "[3.5.41, )"
+            "version": "[3.7.50, )"
           },
           "EcsRx.Infrastructure.Ninject": {
             "target": "Package",
-            "version": "[3.5.41, )"
+            "version": "[3.7.50, )"
           },
           "EcsRx.Plugins.ReactiveSystems": {
             "target": "Package",
-            "version": "[3.5.41, )"
+            "version": "[3.7.50, )"
           },
           "EcsRx.Plugins.Views": {
             "target": "Package",
-            "version": "[3.5.41, )"
+            "version": "[3.7.50, )"
           },
           "EcsRx.ReactiveData": {
             "target": "Package",
-            "version": "[3.5.41, )"
+            "version": "[3.7.50, )"
           },
           "FSharp.Core": {
             "target": "Package",
@@ -4068,7 +4068,7 @@
           },
           "ecsrx": {
             "target": "Package",
-            "version": "[3.5.41, )"
+            "version": "[3.7.50, )"
           }
         }
       }

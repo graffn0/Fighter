@@ -33,17 +33,18 @@
     <Compile Include="Components\SpriteComponent %28copy%29.fs" />
     <Compile Include="Main\Extensions.fs" />
     <Compile Include="Main\Applicationfs.fs" />
+    <Compile Include="Main\Extensions %28copy%29.fs" />
     <Compile Include="Handlers\ViewHandler.fs" />
     <Compile Include="Systems\MovementSystem.fs" />
     <Compile Include="ViewResolvers\PlayerViewResolver.fs" />
-    <PackageReference Include="EcsRx.Infrastructure" Version="3.5.41" />
-    <PackageReference Include="ecsrx" Version="3.5.41" />
-    <PackageReference Include="System.Runtime" Version="4.3.1" />
-    <PackageReference Include="EcsRx.ReactiveData" Version="3.5.41" />
-    <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="3.5.41" />
-    <PackageReference Include="Proto.Actor" Version="0.2.0" />
-    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.5.41" />
-    <PackageReference Include="EcsRx.Plugins.Views" Version="3.5.41" />
     <Compile Include="Playerfs.fs" />
+    <PackageReference Include="EcsRx.Infrastructure" Version="3.7.50" />
+    <PackageReference Include="ecsrx" Version="3.7.50" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="EcsRx.ReactiveData" Version="3.7.50" />
+    <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="3.7.50" />
+    <PackageReference Include="Proto.Actor" Version="0.2.0" />
+    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.7.50" />
+    <PackageReference Include="EcsRx.Plugins.Views" Version="3.7.50" />
   </ItemGroup>
 </Project>
