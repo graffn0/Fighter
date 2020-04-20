@@ -38,7 +38,6 @@
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/Fight.pdb
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/EcsRx.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/EcsRx.Infrastructure.dll
-/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/EcsRx.Infrastructure.Ninject.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/EcsRx.MicroRx.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/EcsRx.Plugins.ReactiveSystems.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/EcsRx.Plugins.Views.dll
@@ -51,7 +50,6 @@
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/System.Threading.Tasks.Extensions.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/System.Runtime.CompilerServices.Unsafe.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/Fighter.pdb
-/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/Ninject.xml
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/es/FSharp.Core.resources.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/zh-Hans/FSharp.Core.resources.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/ja/FSharp.Core.resources.dll
@@ -63,10 +61,19 @@
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/pt-BR/FSharp.Core.resources.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/de/FSharp.Core.resources.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/it/FSharp.Core.resources.dll
-/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/en/FSharp.Core.resources.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/fr/FSharp.Core.resources.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/ru/FSharp.Core.resources.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/obj/Tools/Fight.csprojAssemblyReference.cache
 /home/phalanx/Desktop/Fighter.git/.mono/temp/obj/Tools/Fight.csproj.CopyComplete
 /home/phalanx/Desktop/Fighter.git/.mono/temp/obj/Tools/Fight.dll
 /home/phalanx/Desktop/Fighter.git/.mono/temp/obj/Tools/Fight.pdb
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/EcsRx.Infrastructure.Ninject.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/Proto.Actor.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/System.Collections.Immutable.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/Microsoft.Extensions.Logging.Abstractions.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/Google.Protobuf.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/System.Memory.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/System.Numerics.Vectors.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/System.Buffers.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/en/FSharp.Core.resources.dll
+/home/phalanx/Desktop/Fighter.git/.mono/temp/bin/Tools/Newtonsoft.Json.dll

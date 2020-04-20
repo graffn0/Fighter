@@ -1,50 +1,74 @@
 {
   "format": 1,
   "restore": {
-    "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj": {}
+    "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj": {}
   },
   "projects": {
-    "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj": {
+    "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj",
+        "projectUniqueName": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
         "projectName": "Fighter",
-        "projectPath": "/home/phalanx/Desktop/Fighter/Fighter/Fighter.fsproj",
+        "projectPath": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
         "packagesPath": "/home/phalanx/.nuget/packages/",
-        "outputPath": "/home/phalanx/Desktop/Fighter/Fighter/obj/",
+        "outputPath": "/home/phalanx/Desktop/Fighter.git/Fighter/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/phalanx/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net472"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net45": {
+          "net472": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net45": {
+        "net472": {
           "dependencies": {
+            "EcsRx.Infrastructure": {
+              "target": "Package",
+              "version": "[3.11.68, )"
+            },
+            "EcsRx.Infrastructure.Ninject": {
+              "target": "Package",
+              "version": "[3.11.68, )"
+            },
+            "EcsRx.Plugins.ReactiveSystems": {
+              "target": "Package",
+              "version": "[3.11.68, )"
+            },
+            "EcsRx.Plugins.Views": {
+              "target": "Package",
+              "version": "[3.11.68, )"
+            },
+            "EcsRx.ReactiveData": {
+              "target": "Package",
+              "version": "[3.11.68, )"
+            },
             "FSharp.Core": {
               "target": "Package",
               "version": "[4.7.0, )"
             },
+            "Proto.Actor": {
+              "target": "Package",
+              "version": "[0.2.0, )"
+            },
             "System.Runtime": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[4.3.1, )"
             },
-            "System.ValueTuple": {
+            "ecsrx": {
               "target": "Package",
-              "version": "[4.4.0, )"
+              "version": "[3.11.68, )"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.103/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,6 +11,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <BaseIntermediateOutputPath>.mono/temp/obj</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)</IntermediateOutputPath>
+    <ApiConfiguration Condition=" '$(Configuration)' != 'Release' ">Debug</ApiConfiguration>
+    <ApiConfiguration Condition=" '$(Configuration)' == 'Release' ">Release</ApiConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,42 +41,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GodotSharp">
-      <HintPath>$(ProjectDir)/.mono/assemblies/GodotSharp.dll</HintPath>
       <Private>False</Private>
+      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharp.dll</HintPath>
     </Reference>
     <Reference Include="GodotSharpEditor" Condition=" '$(Configuration)' == 'Tools' ">
-      <HintPath>$(ProjectDir)/.mono/assemblies/GodotSharpEditor.dll</HintPath>
       <Private>False</Private>
+      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharpEditor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="EcsRx.MicroRx">
-      <HintPath>packages\EcsRx.MicroRx.3.5.41\lib\net46\EcsRx.MicroRx.dll</HintPath>
-    </Reference>
-    <Reference Include="EcsRx">
-      <HintPath>packages\EcsRx.3.5.41\lib\net46\EcsRx.dll</HintPath>
-    </Reference>
-    <Reference Include="EcsRx.Infrastructure">
-      <HintPath>packages\EcsRx.Infrastructure.3.5.41\lib\net46\EcsRx.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject">
-      <HintPath>packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
-    </Reference>
-    <Reference Include="EcsRx.Infrastructure.Ninject">
-      <HintPath>packages\EcsRx.Infrastructure.Ninject.3.5.41\lib\net46\EcsRx.Infrastructure.Ninject.dll</HintPath>
-    </Reference>
-    <Reference Include="EcsRx.Plugins.ReactiveSystems">
-      <HintPath>packages\EcsRx.Plugins.ReactiveSystems.3.5.41\lib\net46\EcsRx.Plugins.ReactiveSystems.dll</HintPath>
-    </Reference>
-    <Reference Include="EcsRx.Plugins.Views">
-      <HintPath>packages\EcsRx.Plugins.Views.3.5.41\lib\net46\EcsRx.Plugins.Views.dll</HintPath>
-    </Reference>
-    <Reference Include="EcsRx.Godot, Version=1.0.7343.22975, Culture=neutral, PublicKeyToken=null" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
-    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EntityBound.cs" />
+    <Compile Include="KeybindInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fighter\Fighter.fsproj">
@@ -83,7 +63,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="Entities.json" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,17 @@
+﻿{
+    "Player": [
+        { "Case": "Input" },
+        { 
+            "Case": "Movement",
+            "Fields": [100.0] 
+        },
+        { 
+            "Case": "State",
+            "Fields": [{ "Case": "Stand" }] 
+        },
+        { 
+            "Case": "Type",
+            "Fields": ["res://Player.tscn"] 
+        }
+    ]
+}

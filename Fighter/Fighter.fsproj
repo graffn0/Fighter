@@ -6,10 +6,7 @@
 
   <ItemGroup>
     <Reference Include="GodotSharp">
-      <HintPath>../.mono/assemblies/GodotSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="EcsRx.Godot">
-      <HintPath>../.mono/assemblies/EcsRx.Godot.dll</HintPath>
+      <HintPath>../.mono/assemblies/Debug/GodotSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
 
@@ -18,33 +15,35 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
-    <Folder Include="Main\" />
+    <Folder Include="Support\" />
     <Folder Include="Systems\" />
-    <Folder Include="ViewResolvers\" />
-    <Folder Include="Handlers\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Nodes\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library.fs" />
-    <Compile Include="EntityBoundfs.fs" />
-    <Compile Include="Components\MovementComponent.fs" />
-    <Compile Include="Components\InputComponent.fs" />
-    <Compile Include="Components\ViewComponent2D.fs" />
-    <Compile Include="Components\SpriteComponent.fs" />
-    <Compile Include="Components\SpriteComponent %28copy%29.fs" />
-    <Compile Include="Main\Extensions.fs" />
-    <Compile Include="Main\Applicationfs.fs" />
-    <Compile Include="Main\Extensions %28copy%29.fs" />
-    <Compile Include="Handlers\ViewHandler.fs" />
+    <Compile Include="Modules\InputManager.fs" />
+    <Compile Include="Components\UIComponents.fs" />
+    <Compile Include="Components\NodeComponents.fs" />
+    <Compile Include="Components\InputComponents.fs" />
+    <Compile Include="Support\Extensions.fs" />
+    <Compile Include="Support\GodotApplication.fs" />
+    <Compile Include="Support\Blueprint.fs" />
+    <Compile Include="Support\ViewHandler.fs" />
+    <Compile Include="Nodes\Applicationfs.fs" />
+    <Compile Include="Nodes\EntityBoundfs.fs" />
+    <Compile Include="Nodes\KeybindInputfs.fs" />
+    <Compile Include="Systems\InputSystem.fs" />
     <Compile Include="Systems\MovementSystem.fs" />
-    <Compile Include="ViewResolvers\PlayerViewResolver.fs" />
-    <Compile Include="Playerfs.fs" />
-    <PackageReference Include="EcsRx.Infrastructure" Version="3.7.50" />
-    <PackageReference Include="ecsrx" Version="3.7.50" />
+    <Compile Include="Systems\ViewResolver.fs" />
+    <Compile Include="Systems\StateSystems.fs" />
+    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.11.68" />
+    <PackageReference Include="EcsRx.Infrastructure" Version="3.11.68" />
+    <PackageReference Include="ecsrx" Version="3.11.68" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
-    <PackageReference Include="EcsRx.ReactiveData" Version="3.7.50" />
-    <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="3.7.50" />
-    <PackageReference Include="Proto.Actor" Version="0.2.0" />
-    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.7.50" />
-    <PackageReference Include="EcsRx.Plugins.Views" Version="3.7.50" />
+    <PackageReference Include="EcsRx.ReactiveData" Version="3.11.68" />
+    <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="3.11.68" />
+    <PackageReference Include="Proto.Actor" Version="0.2.1-alpha.0.27" />
+    <PackageReference Include="EcsRx.Plugins.Views" Version="3.11.68" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>
