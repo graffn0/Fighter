@@ -3,10 +3,10 @@
 open Godot
 open EcsRx.Components
 
-type SpriteComponent =
-    { sprite: Sprite }
+type HealthBarComponent =
+    { healthBar: TextureProgress }
     interface IComponent
 
-type CollisionComponent =
-    { collision: CollisionShape2D }
+type PlaybackComponent =
+    { playback: AnimationNodeStateMachinePlayback }
     interface IComponent

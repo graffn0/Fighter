@@ -51,10 +51,11 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs" />
+    <Compile Include="CSNodes\CameraBound.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="EntityBound.cs" />
-    <Compile Include="KeybindInput.cs" />
+    <Compile Include="CSNodes\Application.cs" />
+    <Compile Include="CSNodes\EntityBound.cs" />
+    <Compile Include="CSNodes\KeybindInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fighter\Fighter.fsproj">
@@ -63,7 +64,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Entities.json" />
+    <None Include="Data\Entities.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CSNodes\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

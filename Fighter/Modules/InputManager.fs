@@ -16,7 +16,7 @@ type InputMessage =
       jump: float32 }
 
 let private actorManager = new ActorSystem() |> RootContext
-let mutable private inputActors = List<PID>.Empty
+let mutable private inputActors = List<int * PID>.Empty
 let private inputMap =
     let mutable map = Map.empty
     for action in InputMap.GetActions() |> Collections.Array<string> do
@@ -26,32 +26,41 @@ let private inputMap =
                 map <- map.Add(key.AsText(), action)
     map
 
-let addActor(actor: IActor) =
+let addActor(actor: IActor, player: int) =
     let props = Props.FromProducer(fun () -> actor)
-    inputActors <- actorManager.Spawn(props) :: inputActors
+    inputActors <- (player, actorManager.Spawn(props)) :: inputActors
 
 let inputTypeHasAction(event: InputEvent) =
     event.AsText() |> inputMap.ContainsKey
 
 let sendInputMessage(event: InputEvent) =
-    let inputTypeToAction(input: InputType) =
-        match input with
-        | Right -> "ui_right"
-        | Left -> "ui_left"
-        | Jump -> "jump"
+    let inputTypeToAction(input: InputType, player: int) =
+        match player with
+        | 1 ->
+            match input with
+            | Right -> "Player 1 right"
+            | Left -> "Player 1 left"
+            | Jump -> "Player 1 jump"
+        | 2 ->
+            match input with
+            | Right -> "Player 2 right"
+            | Left -> "Player 2 left"
+            | Jump -> "Player 2 jump"
+        | _ -> "ui_cancel"
 
-    let isPressedToFloat(input: InputType) =
-        input
+    let isPressedToFloat(input: InputType, player: int) =
+        (input, player)
         |> inputTypeToAction
         |> Input.IsActionPressed
         |> Convert.ToInt16
         |> float32
 
     inputActors
-    |> List.iter(fun actor ->
+    |> List.iter(fun actorTuple ->
+        let id, actor = actorTuple
         actorManager.Send(actor, {
-            right = isPressedToFloat(Right)
-            left = isPressedToFloat(Left)
-            jump = isPressedToFloat(Jump) 
+            right = isPressedToFloat(Right, id)
+            left = isPressedToFloat(Left, id)
+            jump = isPressedToFloat(Jump, id) 
             })
         )

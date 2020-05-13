@@ -11,39 +11,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="EcsRxApplication.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\" />
-    <Folder Include="Support\" />
-    <Folder Include="Systems\" />
-    <Folder Include="Modules\" />
-    <Folder Include="Nodes\" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Modules\InputManager.fs" />
+    <Compile Include="Components\CombatComponents.fs" />
     <Compile Include="Components\UIComponents.fs" />
     <Compile Include="Components\NodeComponents.fs" />
     <Compile Include="Components\InputComponents.fs" />
-    <Compile Include="Support\Extensions.fs" />
+    <Compile Include="Components\CameraComponents.fs" />
     <Compile Include="Support\GodotApplication.fs" />
     <Compile Include="Support\Blueprint.fs" />
     <Compile Include="Support\ViewHandler.fs" />
     <Compile Include="Nodes\Applicationfs.fs" />
     <Compile Include="Nodes\EntityBoundfs.fs" />
+    <Compile Include="Nodes\CameraBoundfs.fs" />
     <Compile Include="Nodes\KeybindInputfs.fs" />
+    <Compile Include="Systems\HealthSystem.fs" />
     <Compile Include="Systems\InputSystem.fs" />
     <Compile Include="Systems\MovementSystem.fs" />
     <Compile Include="Systems\ViewResolver.fs" />
+    <Compile Include="Systems\CameraSystems.fs" />
     <Compile Include="Systems\StateSystems.fs" />
-    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.11.68" />
-    <PackageReference Include="EcsRx.Infrastructure" Version="3.11.68" />
-    <PackageReference Include="ecsrx" Version="3.11.68" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
-    <PackageReference Include="EcsRx.ReactiveData" Version="3.11.68" />
     <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="3.11.68" />
-    <PackageReference Include="Proto.Actor" Version="0.2.1-alpha.0.27" />
+    <PackageReference Include="EcsRx.ReactiveData" Version="3.11.68" />
+    <PackageReference Include="ecsrx" Version="3.11.68" />
+    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.11.68" />
     <PackageReference Include="EcsRx.Plugins.Views" Version="3.11.68" />
+    <PackageReference Include="Proto.Actor" Version="0.2.1-alpha.0.27" />
+    <PackageReference Include="EcsRx.Infrastructure" Version="3.11.68" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>

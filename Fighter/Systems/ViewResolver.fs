@@ -1,6 +1,7 @@
 ﻿namespace Fighter.ViewResolvers
 
 open Fighter
+open Fighter.Components.Camera
 open Godot
 open EcsRx.Collections.Database
 open EcsRx.Events
@@ -12,6 +13,7 @@ open EcsRx.Plugins.Views.Systems
 open EcsRx.Plugins.Views.ViewHandlers
 open Components.UI
 open Components.Node
+open Components.Combat
 
 open ViewHandlers
 
@@ -22,7 +24,8 @@ type ViewResolver(collectionManager: IEntityDatabase, eventSystem: IEventSystem)
 
     member this.collectionManager = collectionManager
 
-    override this.Group = new Group(typedefof<ViewComponent>, typedefof<TypeComponent>) :> IGroup
+    override this.Group =
+        Group(typedefof<ViewComponent>, typedefof<TypeComponent>) :> IGroup
 
     override this.ViewHandler
         with get() = mainHandler
@@ -36,7 +39,8 @@ type ViewResolver(collectionManager: IEntityDatabase, eventSystem: IEventSystem)
                 if Applicationfs.instance.HasNode(nodePath) then
                     Applicationfs.instance.GetNode(nodePath)
                 else
-                    let scene = ResourceLoader.Load<PackedScene>(typeComponent.loadPath)
+                    let scene =
+                        ResourceLoader.Load<PackedScene>(typeComponent.loadPath)
                     let instance = scene.Instance()
                     Applicationfs.instance.AddChild(instance)
                     instance )
@@ -47,27 +51,55 @@ type ViewResolver(collectionManager: IEntityDatabase, eventSystem: IEventSystem)
     override this.OnViewCreated(entity: IEntity, viewComponent: ViewComponent) =
         let typeComponent = entity.GetComponent<TypeComponent>()
 
-        let addNodeComponents(view: EntityBoundfs) =
-            let spritePath = new NodePath("Sprite")
-            let collisionPath = new NodePath("CollisionShape2D")
+        let addNodeComponents() =
+            let setupHealthBar() =
+                let healthComponent = entity.GetComponent<HealthComponent>()
+                let playerComponent = entity.GetComponent<PlayerComponent>()
+                let container =
+                    Applicationfs
+                        .instance
+                        .GetNode(new NodePath("CanvasLayer"))
+                        .GetNode(new NodePath("Interface"))
+                        .GetNode(new NodePath("HBoxContainer"))
 
-            let setupSprite(view: EntityBoundfs) =
-                match view.GetNode(spritePath) with
-                | :? Sprite as sprite -> entity.AddComponents({ sprite = sprite })
+                let addComponent(path: NodePath) =
+                    match path |> container.GetNode with
+                    | :? TextureProgress as node ->
+                        node.MaxValue <- healthComponent.totalHealth
+                        node.Value <- healthComponent.totalHealth
+                        { healthBar = node }
+                        |> entity.AddComponents
+                    | _ -> ()
+
+                match playerComponent.id with
+                | 1 -> addComponent(new NodePath("Bar1"))
+                | 2 -> addComponent(new NodePath("Bar2"))
                 | _ -> ()
+            
+            if entity.HasComponent<HealthComponent>() &&
+                entity.HasComponent<PlayerComponent>() then setupHealthBar()
 
-            let setupCollision(view: EntityBoundfs) =
-                match view.GetNode(collisionPath) with
-                | :? CollisionShape2D as collision -> entity.AddComponents({ collision = collision })
-                | _ -> ()
-
-            if view.HasNode(spritePath) then setupSprite(view)
-            if view.HasNode(collisionPath) then setupCollision(view)
+        let addNodeComponents2(node: Node) =
+            match node with
+            | :? AnimationTree as animationTree ->
+                let stateMachine = animationTree.Get("parameters/StateMachine/playback") :?> AnimationNodeStateMachinePlayback
+                let stateComponent = entity.GetComponent<StateComponent>()
+                stateComponent.currentState.Value
+                |> stateToString
+                |> stateMachine.Travel
+            | _ -> ()
 
         match viewComponent.View with
         | :? EntityBoundfs as view ->
-            addNodeComponents(view)
-            view.entityCollection <- Some (this.collectionManager.GetCollectionFor(entity))
+            addNodeComponents()
+            view.entityCollection <-
+                Some (this.collectionManager.GetCollectionFor(entity))
+            view.entity <- Some (entity)
+            view.Name <- typeComponent.name
+        | :? CameraBoundfs as view ->
+            addNodeComponents()
+            view.entityCollection <-
+                Some (this.collectionManager.GetCollectionFor(entity))
             view.entity <- Some (entity)
             view.Name <- typeComponent.name
         | _ -> ()

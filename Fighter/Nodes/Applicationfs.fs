@@ -15,11 +15,13 @@ type Applicationfs() =
         Applicationfs.instance <- this
         let defaultCollection = this.Application.EntityDatabase.GetCollection()
         for node in Collections.Array<Node>(this.GetChildren()) do
-            let name = node.Name
-            let nameType = Regex.Replace(name, @"[^a-zA-Z\s]", "")
-            match stringToEntityType(nameType) with
-            | Some t ->
-                defaultCollection.CreateEntity(getBlueprint(t, name)) |> ignore
+            match node with
+            | :? KinematicBody2D | :? Camera2D ->
+                let name = node.Name
+                defaultCollection.CreateEntity(
+                    (Regex.Replace(name, @"[^a-zA-Z\s]", ""), name)
+                    |> getBlueprintByString)
+                    |> ignore
             | _ -> ()
 
     override this._UnhandledInput(event: InputEvent) =

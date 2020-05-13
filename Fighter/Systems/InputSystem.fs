@@ -15,22 +15,22 @@ type InputSystem() =
 
     interface IReactToEntitySystem with
         member this.Group = 
-            new Group(
+            Group(
                 typedefof<MovementComponent>,
                 typedefof<InputComponent>
                 ) :> IGroup
 
         member this.ReactToEntity(entity : IEntity) =
             let inputComponent = entity.GetComponent<InputComponent>()
-            inputComponent.pendingMovement.DistinctUntilChanged().Select(fun x -> entity)
+            inputComponent.pendingMovement.DistinctUntilChanged().Select(fun _ -> entity)
 
         member this.Process(entity : IEntity) =
             let inputComponent = entity.GetComponent<InputComponent>()
-            let movmentComponent = entity.GetComponent<MovementComponent>()
+            let movementComponent = entity.GetComponent<MovementComponent>()
             let input = inputComponent.pendingMovement.Value
-            let mutable velocity = movmentComponent.movement.Value
+            let mutable velocity = movementComponent.movement.Value
 
-            velocity.x <- input.x * movmentComponent.speed
-            if movmentComponent.isOnFloor.Value then
+            velocity.x <- input.x * movementComponent.speed
+            if movementComponent.isOnFloor.Value then
                 velocity.y <- input.y * jumpHeight
-            movmentComponent.movement.Value <- velocity
+            movementComponent.movement.Value <- velocity

@@ -1,21 +1,25 @@
-﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Fighter/Fighter.fsproj">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fighter/Components/CombatComponents.fs">
     <Files>
-      <File FileName="Fighter/Nodes/Applicationfs.fs" Line="25" Column="55" />
-      <File FileName="Fighter/Fighter.fsproj" Line="1" Column="1" />
-      <File FileName="Entities.json" Line="1" Column="2" />
-      <File FileName="Fighter/Support/Blueprint.fs" Line="35" Column="25" />
+      <File FileName="Fighter/Fighter.fsproj" Line="28" Column="56" />
+      <File FileName="Fighter/Nodes/Applicationfs.fs" Line="15" Column="9" />
+      <File FileName="Fighter/Components/NodeComponents.fs" Line="5" Column="1" />
+      <File FileName="Fighter/Components/CombatComponents.fs" Line="15" Column="5" />
+      <File FileName="Fighter/Components/UIComponents.fs" Line="30" Column="28" />
+      <File FileName="Fighter/Support/Blueprint.fs" Line="72" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Fight" expanded="True">
             <Node name="Fight" expanded="True">
-              <Node name="Entities.json" selected="True" />
+              <Node name="CSNodes" expanded="True" />
             </Node>
             <Node name="Fighter" expanded="True">
               <Node name="Modules" expanded="True" />
-              <Node name="Components" expanded="True" />
+              <Node name="Components" expanded="True">
+                <Node name="CombatComponents.fs" selected="True" />
+              </Node>
               <Node name="Support" expanded="True" />
               <Node name="Nodes" expanded="True" />
               <Node name="Systems" expanded="True" />

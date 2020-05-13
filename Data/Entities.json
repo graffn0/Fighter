@@ -1,0 +1,25 @@
+﻿{
+    "Player": [
+        { "Case": "Input" },
+        { 
+            "Case": "Movement",
+            "Fields": [100.0] 
+        },
+        { "Case": "State" },
+        { 
+            "Case": "Type",
+            "Fields": ["res://Scene/Player.tscn"] 
+        },
+        { 
+            "Case": "Health",
+            "Fields": [100.0] 
+        }
+    ],
+    "Camera": [
+        {
+            "Case": "Type",
+            "Fields": ["res://Scene/MainCamera.tscn"]
+        },
+        { "Case": "Camera" }
+    ]
+}

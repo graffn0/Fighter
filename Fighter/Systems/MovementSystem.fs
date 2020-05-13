@@ -20,19 +20,21 @@ type MovementSystem() =
 
     interface IReactToGroupSystem with
         member this.Group = 
-            new Group(
+            Group(
                 typedefof<MovementComponent>,
                 typedefof<ViewComponent>
                 ) :> IGroup
 
         member this.ReactToGroup(group: IObservableGroup) =
-            let scheduler = new SynchronizationContextScheduler(SynchronizationContext.Current)
-            Observable.Interval(TimeSpan.FromSeconds(0.01), scheduler).Select(fun x -> group)
+            let scheduler = SynchronizationContextScheduler(SynchronizationContext.Current)
+            Observable.Interval(TimeSpan.FromSeconds(0.01), scheduler).Select(fun _ -> group)
 
         member this.Process(entity : IEntity) =
-            let viewGameObject = entity.GetView()
-            let movmentComponent = entity.GetComponent<MovementComponent>()
-            let mutable velocity = movmentComponent.movement.Value
-            movmentComponent.isOnFloor.Value <- viewGameObject.IsOnFloor()
-            velocity.y <- velocity.y + gravity
-            movmentComponent.movement.Value <- viewGameObject.MoveAndSlide(velocity, floor)
+            match entity.GetComponent<ViewComponent>().View with
+            | :? KinematicBody2D as viewGameObject ->
+                let movementComponent = entity.GetComponent<MovementComponent>()
+                let mutable velocity = movementComponent.movement.Value
+                movementComponent.isOnFloor.Value <- viewGameObject.IsOnFloor()
+                velocity.y <- velocity.y + gravity
+                movementComponent.movement.Value <- viewGameObject.MoveAndSlide(velocity, floor)
+            | _ -> ()

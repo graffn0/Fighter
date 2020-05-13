@@ -1,0 +1,68 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
+    "projectName": "Fighter",
+    "projectPath": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
+    "outputPath": "/home/phalanx/Desktop/Fighter.git/Fighter/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net472"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net472": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "net472": {
+      "dependencies": {
+        "EcsRx.Infrastructure": {
+          "target": "Package",
+          "version": "[3.11.68, )"
+        },
+        "EcsRx.Infrastructure.Ninject": {
+          "target": "Package",
+          "version": "[3.11.68, )"
+        },
+        "EcsRx.Plugins.ReactiveSystems": {
+          "target": "Package",
+          "version": "[3.11.68, )"
+        },
+        "EcsRx.Plugins.Views": {
+          "target": "Package",
+          "version": "[3.11.68, )"
+        },
+        "EcsRx.ReactiveData": {
+          "target": "Package",
+          "version": "[3.11.68, )"
+        },
+        "FSharp.Core": {
+          "target": "Package",
+          "version": "[4.5.2, )"
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[12.0.3, )"
+        },
+        "Proto.Actor": {
+          "target": "Package",
+          "version": "[0.2.1-alpha.0.27, )"
+        },
+        "System.Runtime": {
+          "target": "Package",
+          "version": "[4.3.1, )"
+        },
+        "ecsrx": {
+          "target": "Package",
+          "version": "[3.11.68, )"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+    }
+  }
+}

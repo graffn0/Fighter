@@ -53,11 +53,15 @@
             },
             "FSharp.Core": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[4.5.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Proto.Actor": {
               "target": "Package",
-              "version": "[0.2.0, )"
+              "version": "[0.2.1-alpha.0.27, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -68,7 +72,7 @@
               "version": "[3.11.68, )"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
         }
       }
     }
