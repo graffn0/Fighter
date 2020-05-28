@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://CSNodes/Application.cs" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Test.tmx" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Interface.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/MainCamera.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Main.tscn" type="PackedScene" id=6]
 
 [node name="Stage" type="Node2D"]
 script = ExtResource( 1 )
@@ -23,6 +24,17 @@ position = Vector2( 510, 300 )
 current = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Menu" parent="CanvasLayer" instance=ExtResource( 6 )]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
 
 [node name="Interface" parent="CanvasLayer" instance=ExtResource( 4 )]
 margin_top = 30.0

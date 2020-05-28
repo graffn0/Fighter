@@ -20,7 +20,7 @@ type ChangeStateSystem() =
                 ) :> IGroup
 
         member this.ReactToGroup(group: IObservableGroup) =
-            Observable.Interval(TimeSpan.FromSeconds(0.01)).Select(fun _ -> group)
+            Observable.EveryUpdate().Select(fun _ -> group)
 
         member this.Process(entity : IEntity) =
             let stateComponent = entity.GetComponent<StateComponent>()

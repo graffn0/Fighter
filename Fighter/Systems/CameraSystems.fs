@@ -24,8 +24,7 @@ type CameraSystem() =
                 ) :> IGroup
 
         member this.ReactToGroup(group: IObservableGroup) =
-            let scheduler = SynchronizationContextScheduler(SynchronizationContext.Current)
-            Observable.Interval(TimeSpan.FromSeconds(0.01), scheduler).Select(fun _ -> group)
+            Observable.EveryUpdate().Select(fun _ -> group)
 
         member this.Process(entity : IEntity) =
             let viewComponent = entity.GetComponent<ViewComponent>()
@@ -33,21 +32,39 @@ type CameraSystem() =
             let calculateCenter(rect: Rect2) =
                 Vector2(
                            rect.Position.x + rect.Size.x / 2.0f,
-                           rect.Position.y / 2.0f
+                           rect.Position.y
                        )
-            cameraComponent.cameraRect.Value <- Rect2()
+            let mutable cameraRect = Rect2()
+            let mutable first = true
             for node in Collections.Array<Node>(Applicationfs.instance.GetChildren()) do
                 match node with
                 | :? EntityBoundfs as bound ->
                     match bound.entity with
                     | Some playerEntity ->
                         if playerEntity.HasComponent<InputComponent>() then
-                            cameraComponent.cameraRect.Value <-
-                                cameraComponent.cameraRect.Value.Expand(bound.GlobalPosition)
+                            if first then
+                                cameraRect <- Rect2(bound.GlobalPosition, Vector2())
+                                first <- false
+                            else
+                                cameraRect <- cameraRect.Expand(bound.GlobalPosition)
                     | _ -> ()
                 | _ -> ()
-            
+                
             match viewComponent.View with
             | :? Camera2D as camera ->
-                camera.Offset <- calculateCenter(cameraComponent.cameraRect.Value)
+                let viewport = camera.GetViewportRect()
+                let center = calculateCenter(cameraRect)
+                camera.Offset <-
+                    let halfViewX = viewport.Size.x / 2.0f
+                    let thirdViewY = viewport.Size.y / 3.0f
+                    Vector2(
+                                center.x - halfViewX,
+                                if center.y < thirdViewY then
+                                    center.y - thirdViewY
+                                else
+                                    0.0f
+                           )
+                
+                cameraComponent.cameraRect.Value <- cameraRect
+                camera.Update()
             | _ -> ()

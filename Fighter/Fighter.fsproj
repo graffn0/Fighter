@@ -24,6 +24,7 @@
     <Compile Include="Nodes\EntityBoundfs.fs" />
     <Compile Include="Nodes\CameraBoundfs.fs" />
     <Compile Include="Nodes\KeybindInputfs.fs" />
+    <Compile Include="Utility\Extentions.fs" />
     <Compile Include="Systems\HealthSystem.fs" />
     <Compile Include="Systems\InputSystem.fs" />
     <Compile Include="Systems\MovementSystem.fs" />

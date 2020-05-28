@@ -14,7 +14,6 @@ open EcsRx.Plugins.Views.ViewHandlers
 open Components.UI
 open Components.Node
 open Components.Combat
-
 open ViewHandlers
 
 type ViewResolver(collectionManager: IEntityDatabase, eventSystem: IEventSystem) =

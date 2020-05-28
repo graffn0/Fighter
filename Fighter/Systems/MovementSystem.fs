@@ -26,8 +26,7 @@ type MovementSystem() =
                 ) :> IGroup
 
         member this.ReactToGroup(group: IObservableGroup) =
-            let scheduler = SynchronizationContextScheduler(SynchronizationContext.Current)
-            Observable.Interval(TimeSpan.FromSeconds(0.01), scheduler).Select(fun _ -> group)
+            Observable.EveryUpdate().Select(fun _ -> group)
 
         member this.Process(entity : IEntity) =
             match entity.GetComponent<ViewComponent>().View with
