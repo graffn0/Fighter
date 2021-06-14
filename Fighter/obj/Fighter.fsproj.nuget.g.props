@@ -4,12 +4,27 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/phalanx/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/phalanx/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Battl\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.5.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.1</NuGetToolVersion>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Battl\.nuget\packages\" />
+  </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSystem_Runtime Condition=" '$(PkgSystem_Runtime)' == '' ">C:\Users\Battl\.nuget\packages\system.runtime\4.3.1</PkgSystem_Runtime>
+    <PkgProto_Actor Condition=" '$(PkgProto_Actor)' == '' ">C:\Users\Battl\.nuget\packages\proto.actor\0.2.1-alpha.0.27</PkgProto_Actor>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Battl\.nuget\packages\newtonsoft.json\12.0.3</PkgNewtonsoft_Json>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Battl\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+    <PkgEcsRx_ReactiveData Condition=" '$(PkgEcsRx_ReactiveData)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.reactivedata\3.11.68</PkgEcsRx_ReactiveData>
+    <PkgEcsRx Condition=" '$(PkgEcsRx)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx\3.11.68</PkgEcsRx>
+    <PkgEcsRx_Infrastructure Condition=" '$(PkgEcsRx_Infrastructure)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.infrastructure\3.11.68</PkgEcsRx_Infrastructure>
+    <PkgEcsRx_Plugins_ReactiveSystems Condition=" '$(PkgEcsRx_Plugins_ReactiveSystems)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.plugins.reactivesystems\3.11.68</PkgEcsRx_Plugins_ReactiveSystems>
+    <PkgEcsRx_Plugins_Views Condition=" '$(PkgEcsRx_Plugins_Views)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.plugins.views\3.11.68</PkgEcsRx_Plugins_Views>
+    <PkgEcsRx_Infrastructure_Ninject Condition=" '$(PkgEcsRx_Infrastructure_Ninject)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.infrastructure.ninject\3.11.68</PkgEcsRx_Infrastructure_Ninject>
   </PropertyGroup>
 </Project>

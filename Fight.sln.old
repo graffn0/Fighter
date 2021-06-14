@@ -1,0 +1,48 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fight", "Fight.csproj", "{982CAC12-572E-4AE7-BFAA-397D9D877B7D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fighter", "Fighter\Fighter.fsproj", "{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{982CAC12-572E-4AE7-BFAA-397D9D877B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982CAC12-572E-4AE7-BFAA-397D9D877B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982CAC12-572E-4AE7-BFAA-397D9D877B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982CAC12-572E-4AE7-BFAA-397D9D877B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982CAC12-572E-4AE7-BFAA-397D9D877B7D}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{982CAC12-572E-4AE7-BFAA-397D9D877B7D}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8F6FC7-9A00-4E7F-9BA0-0C4780F27788}.Tools|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.scope = text/x-fsharp
+		$1.inheritsSet = null
+		$0.FSharpFormattingPolicy = $2
+		$2.DefaultFormat = $3
+		$3.IndentOnTryWith = False
+		$3.ReorderOpenDeclaration = False
+		$3.SpaceAfterComma = True
+		$3.SpaceAfterSemicolon = True
+		$3.SpaceAroundDelimiter = True
+		$3.SpaceBeforeArgument = True
+		$3.SpaceBeforeColon = True
+		$3.__added = 0
+		$2.scope = text/x-fsharp
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 80
+		$4.TabsToSpaces = True
+		$4.scope = text/plain
+	EndGlobalSection
+EndGlobal

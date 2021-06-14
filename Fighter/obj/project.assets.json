@@ -88,57 +88,52 @@
           "lib/net46/EcsRx.ReactiveData.dll": {}
         }
       },
-      "FSharp.Core/4.5.2": {
+      "FSharp.Core/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/net45/FSharp.Core.dll": {},
-          "lib/net45/FSharp.Core.resources.dll": {}
+          "lib/netstandard2.0/FSharp.Core.dll": {}
         },
         "runtime": {
-          "lib/net45/FSharp.Core.dll": {},
-          "lib/net45/FSharp.Core.resources.dll": {}
+          "lib/netstandard2.0/FSharp.Core.dll": {}
         },
         "resource": {
-          "lib/net45/cs/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
             "locale": "cs"
           },
-          "lib/net45/de/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
             "locale": "de"
           },
-          "lib/net45/en/FSharp.Core.resources.dll": {
-            "locale": "en"
-          },
-          "lib/net45/es/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
             "locale": "es"
           },
-          "lib/net45/fr/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
             "locale": "fr"
           },
-          "lib/net45/it/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
             "locale": "it"
           },
-          "lib/net45/ja/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
             "locale": "ja"
           },
-          "lib/net45/ko/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
             "locale": "ko"
           },
-          "lib/net45/pl/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
             "locale": "pl"
           },
-          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/net45/ru/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
             "locale": "ru"
           },
-          "lib/net45/tr/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
             "locale": "tr"
           },
-          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
+          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -430,52 +425,31 @@
         "lib/netstandard2.0/EcsRx.ReactiveData.dll"
       ]
     },
-    "FSharp.Core/4.5.2": {
-      "sha512": "apbdQOjzsjQ637kTWQuW29jqwY18jsHMyNC5A+TPJZKFEIE2cIfQWf3V7+mXrxlbX69BueYkv293/g70wuXuRw==",
+    "FSharp.Core/5.0.0": {
+      "sha512": "iHoYXA0VaSQUONGENB1aVafjDDZDZpwu39MtaRCTrmwFW/cTcK0b2yKNVYneFHJMc3ChtsSoM9lNtJ1dYXkHfA==",
       "type": "package",
-      "path": "fsharp.core/4.5.2",
+      "path": "fsharp.core/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fsharp.core.4.5.2.nupkg.sha512",
+        "Icon.png",
+        "fsharp.core.5.0.0.nupkg.sha512",
         "fsharp.core.nuspec",
-        "lib/net45/FSharp.Core.dll",
-        "lib/net45/FSharp.Core.optdata",
-        "lib/net45/FSharp.Core.resources.dll",
-        "lib/net45/FSharp.Core.sigdata",
-        "lib/net45/FSharp.Core.xml",
-        "lib/net45/cs/FSharp.Core.resources.dll",
-        "lib/net45/de/FSharp.Core.resources.dll",
-        "lib/net45/en/FSharp.Core.resources.dll",
-        "lib/net45/es/FSharp.Core.resources.dll",
-        "lib/net45/fr/FSharp.Core.resources.dll",
-        "lib/net45/it/FSharp.Core.resources.dll",
-        "lib/net45/ja/FSharp.Core.resources.dll",
-        "lib/net45/ko/FSharp.Core.resources.dll",
-        "lib/net45/pl/FSharp.Core.resources.dll",
-        "lib/net45/pt-BR/FSharp.Core.resources.dll",
-        "lib/net45/ru/FSharp.Core.resources.dll",
-        "lib/net45/tr/FSharp.Core.resources.dll",
-        "lib/net45/zh-Hans/FSharp.Core.resources.dll",
-        "lib/net45/zh-Hant/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/FSharp.Core.dll",
-        "lib/netstandard1.6/FSharp.Core.optdata",
-        "lib/netstandard1.6/FSharp.Core.sigdata",
-        "lib/netstandard1.6/FSharp.Core.xml",
-        "lib/netstandard1.6/cs/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/de/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/en/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/es/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/fr/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/it/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/ja/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/ko/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/pl/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/ru/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
+        "lib/netstandard2.0/FSharp.Core.dll",
+        "lib/netstandard2.0/FSharp.Core.xml",
+        "lib/netstandard2.0/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
       ]
     },
     "Google.Protobuf/3.11.4": {
@@ -948,7 +922,7 @@
       "EcsRx.Plugins.ReactiveSystems >= 3.11.68",
       "EcsRx.Plugins.Views >= 3.11.68",
       "EcsRx.ReactiveData >= 3.11.68",
-      "FSharp.Core >= 4.5.2",
+      "FSharp.Core >= 5.0.0",
       "Newtonsoft.Json >= 12.0.3",
       "Proto.Actor >= 0.2.1-alpha.0.27",
       "System.Runtime >= 4.3.1",
@@ -956,77 +930,91 @@
     ]
   },
   "packageFolders": {
-    "/home/phalanx/.nuget/packages/": {}
+    "C:\\Users\\Battl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
+      "projectUniqueName": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj",
       "projectName": "Fighter",
-      "projectPath": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
-      "packagesPath": "/home/phalanx/.nuget/packages/",
-      "outputPath": "/home/phalanx/Desktop/Fighter.git/Fighter/obj/",
+      "projectPath": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj",
+      "packagesPath": "C:\\Users\\Battl\\.nuget\\packages\\",
+      "outputPath": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/phalanx/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Battl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
       "net472": {
+        "targetAlias": "net472",
         "dependencies": {
           "EcsRx.Infrastructure": {
             "target": "Package",
-            "version": "[3.11.68, )"
+            "version": "[3.11.68, )",
+            "generatePathProperty": true
           },
           "EcsRx.Infrastructure.Ninject": {
             "target": "Package",
-            "version": "[3.11.68, )"
+            "version": "[3.11.68, )",
+            "generatePathProperty": true
           },
           "EcsRx.Plugins.ReactiveSystems": {
             "target": "Package",
-            "version": "[3.11.68, )"
+            "version": "[3.11.68, )",
+            "generatePathProperty": true
           },
           "EcsRx.Plugins.Views": {
             "target": "Package",
-            "version": "[3.11.68, )"
+            "version": "[3.11.68, )",
+            "generatePathProperty": true
           },
           "EcsRx.ReactiveData": {
             "target": "Package",
-            "version": "[3.11.68, )"
+            "version": "[3.11.68, )",
+            "generatePathProperty": true
           },
           "FSharp.Core": {
             "target": "Package",
-            "version": "[4.5.2, )"
+            "version": "[5.0.0, )",
+            "generatePathProperty": true
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[12.0.3, )"
+            "version": "[12.0.3, )",
+            "generatePathProperty": true
           },
           "Proto.Actor": {
             "target": "Package",
-            "version": "[0.2.1-alpha.0.27, )"
+            "version": "[0.2.1-alpha.0.27, )",
+            "generatePathProperty": true
           },
           "System.Runtime": {
             "target": "Package",
-            "version": "[4.3.1, )"
+            "version": "[4.3.1, )",
+            "generatePathProperty": true
           },
           "ecsrx": {
             "target": "Package",
-            "version": "[3.11.68, )"
+            "version": "[3.11.68, )",
+            "generatePathProperty": true
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

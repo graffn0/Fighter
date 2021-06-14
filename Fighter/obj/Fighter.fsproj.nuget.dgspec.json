@@ -1,78 +1,92 @@
 {
   "format": 1,
   "restore": {
-    "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj": {}
+    "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj": {}
   },
   "projects": {
-    "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj": {
+    "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
+        "projectUniqueName": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj",
         "projectName": "Fighter",
-        "projectPath": "/home/phalanx/Desktop/Fighter.git/Fighter/Fighter.fsproj",
-        "packagesPath": "/home/phalanx/.nuget/packages/",
-        "outputPath": "/home/phalanx/Desktop/Fighter.git/Fighter/obj/",
+        "projectPath": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj",
+        "packagesPath": "C:\\Users\\Battl\\.nuget\\packages\\",
+        "outputPath": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/phalanx/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Battl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "dependencies": {
             "EcsRx.Infrastructure": {
               "target": "Package",
-              "version": "[3.11.68, )"
+              "version": "[3.11.68, )",
+              "generatePathProperty": true
             },
             "EcsRx.Infrastructure.Ninject": {
               "target": "Package",
-              "version": "[3.11.68, )"
+              "version": "[3.11.68, )",
+              "generatePathProperty": true
             },
             "EcsRx.Plugins.ReactiveSystems": {
               "target": "Package",
-              "version": "[3.11.68, )"
+              "version": "[3.11.68, )",
+              "generatePathProperty": true
             },
             "EcsRx.Plugins.Views": {
               "target": "Package",
-              "version": "[3.11.68, )"
+              "version": "[3.11.68, )",
+              "generatePathProperty": true
             },
             "EcsRx.ReactiveData": {
               "target": "Package",
-              "version": "[3.11.68, )"
+              "version": "[3.11.68, )",
+              "generatePathProperty": true
             },
             "FSharp.Core": {
               "target": "Package",
-              "version": "[4.5.2, )"
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[12.0.3, )",
+              "generatePathProperty": true
             },
             "Proto.Actor": {
               "target": "Package",
-              "version": "[0.2.1-alpha.0.27, )"
+              "version": "[0.2.1-alpha.0.27, )",
+              "generatePathProperty": true
             },
             "System.Runtime": {
               "target": "Package",
-              "version": "[4.3.1, )"
+              "version": "[4.3.1, )",
+              "generatePathProperty": true
             },
             "ecsrx": {
               "target": "Package",
-              "version": "[3.11.68, )"
+              "version": "[3.11.68, )",
+              "generatePathProperty": true
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
