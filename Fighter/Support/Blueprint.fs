@@ -12,12 +12,10 @@ open Proto
 open Components.UI
 open Components.Input
 open Components.Combat
-open Components.Camera
 open InputManager
 
 type EntityType =
     | Player
-    | MainCamera
 
 type ComponentJson =
     | Input
@@ -26,7 +24,6 @@ type ComponentJson =
     | Type of loadPath: string
     | Health of total: float
     | Attacks of Map<string, AttackData>
-    | Camera
 
 let private jsonResult =
     let file = new File()
@@ -40,7 +37,6 @@ let private jsonResult =
 let entityTypeToString(entityType: EntityType) =
     match entityType with
     | Player -> "Player"
-    | MainCamera -> "Camera"
 
 let getBlueprintByString(entityName: string, name: string) =
     { new IBlueprint with
@@ -79,11 +75,7 @@ let getBlueprintByString(entityName: string, name: string) =
                           |> Map.fold (fun keys key value -> 
                               Map.add (stringToAttackType(key)) value keys) Map.empty }
                     |> entity.AddComponents
-                | Camera ->
-                    { cameraRect = new ReactiveProperty<Rect2>(Rect2()) }
-                    |> entity.AddComponents
                 ) jsonResult.[entityName]
-
             ViewComponent()
             |> entity.AddComponents }
 
