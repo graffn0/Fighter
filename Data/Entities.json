@@ -14,12 +14,5 @@
             "Case": "Health",
             "Fields": [100.0] 
         }
-    ],
-    "Camera": [
-        {
-            "Case": "Type",
-            "Fields": ["res://Scene/MainCamera.tscn"]
-        },
-        { "Case": "Camera" }
     ]
 }

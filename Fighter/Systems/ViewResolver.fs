@@ -1,7 +1,6 @@
 ﻿namespace Fighter.ViewResolvers
 
 open Fighter
-open Fighter.Components.Camera
 open Godot
 open EcsRx.Collections.Database
 open EcsRx.Events
@@ -90,12 +89,6 @@ type ViewResolver(collectionManager: IEntityDatabase, eventSystem: IEventSystem)
 
         match viewComponent.View with
         | :? EntityBoundfs as view ->
-            addNodeComponents()
-            view.entityCollection <-
-                Some (this.collectionManager.GetCollectionFor(entity))
-            view.entity <- Some (entity)
-            view.Name <- typeComponent.name
-        | :? CameraBoundfs as view ->
             addNodeComponents()
             view.entityCollection <-
                 Some (this.collectionManager.GetCollectionFor(entity))

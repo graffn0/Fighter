@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Fighter/Components/CombatComponents.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fighter/Modules/InputManager.fs">
     <Files>
-      <File FileName="Fighter/Fighter.fsproj" Line="28" Column="56" />
+      <File FileName="Fighter/Fighter.fsproj" Line="28" Column="49" />
       <File FileName="Fighter/Nodes/Applicationfs.fs" Line="15" Column="9" />
-      <File FileName="Fighter/Components/NodeComponents.fs" Line="5" Column="1" />
       <File FileName="Fighter/Components/CombatComponents.fs" Line="15" Column="5" />
-      <File FileName="Fighter/Components/UIComponents.fs" Line="30" Column="28" />
-      <File FileName="Fighter/Support/Blueprint.fs" Line="72" Column="39" />
+      <File FileName="Fighter/Support/Blueprint.fs" Line="40" Column="5" />
+      <File FileName="Fighter/Systems/ViewResolver.fs" Line="81" Column="28" />
+      <File FileName="Fighter/Systems/StateSystems.fs" Line="45" Column="17" />
+      <File FileName="Fighter/Modules/InputManager.fs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,10 +17,10 @@
               <Node name="CSNodes" expanded="True" />
             </Node>
             <Node name="Fighter" expanded="True">
-              <Node name="Modules" expanded="True" />
-              <Node name="Components" expanded="True">
-                <Node name="CombatComponents.fs" selected="True" />
+              <Node name="Modules" expanded="True">
+                <Node name="InputManager.fs" selected="True" />
               </Node>
+              <Node name="Components" expanded="True" />
               <Node name="Support" expanded="True" />
               <Node name="Nodes" expanded="True" />
               <Node name="Systems" expanded="True" />
