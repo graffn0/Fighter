@@ -30,13 +30,17 @@
     <Compile Include="Systems\ViewResolver.fs" />
     <Compile Include="Systems\StateSystems.fs" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
-    <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="3.11.68" />
-    <PackageReference Include="EcsRx.ReactiveData" Version="3.11.68" />
-    <PackageReference Include="ecsrx" Version="3.11.68" />
-    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="3.11.68" />
-    <PackageReference Include="EcsRx.Plugins.Views" Version="3.11.68" />
+    <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="4.1.97" />
+    <PackageReference Include="EcsRx.ReactiveData" Version="4.1.97" />
+    <PackageReference Include="ecsrx" Version="4.1.97" />
+    <PackageReference Include="EcsRx.Infrastructure.Ninject" Version="4.1.97" />
+    <PackageReference Include="EcsRx.Plugins.Views" Version="4.1.97" />
     <PackageReference Include="Proto.Actor" Version="0.2.1-alpha.0.27" />
-    <PackageReference Include="EcsRx.Infrastructure" Version="3.11.68" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="EcsRx.Infrastructure" Version="4.1.97" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="5.0.1" />
   </ItemGroup>
 </Project>

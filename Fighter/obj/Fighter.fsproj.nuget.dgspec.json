@@ -37,37 +37,37 @@
           "dependencies": {
             "EcsRx.Infrastructure": {
               "target": "Package",
-              "version": "[3.11.68, )",
+              "version": "[4.1.97, )",
               "generatePathProperty": true
             },
             "EcsRx.Infrastructure.Ninject": {
               "target": "Package",
-              "version": "[3.11.68, )",
+              "version": "[4.1.97, )",
               "generatePathProperty": true
             },
             "EcsRx.Plugins.ReactiveSystems": {
               "target": "Package",
-              "version": "[3.11.68, )",
+              "version": "[4.1.97, )",
               "generatePathProperty": true
             },
             "EcsRx.Plugins.Views": {
               "target": "Package",
-              "version": "[3.11.68, )",
+              "version": "[4.1.97, )",
               "generatePathProperty": true
             },
             "EcsRx.ReactiveData": {
               "target": "Package",
-              "version": "[3.11.68, )",
+              "version": "[4.1.97, )",
               "generatePathProperty": true
             },
             "FSharp.Core": {
               "target": "Package",
-              "version": "[5.0.0, )",
+              "version": "[5.0.1, )",
               "generatePathProperty": true
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )",
+              "version": "[13.0.1, )",
               "generatePathProperty": true
             },
             "Proto.Actor": {
@@ -82,7 +82,7 @@
             },
             "ecsrx": {
               "target": "Package",
-              "version": "[3.11.68, )",
+              "version": "[4.1.97, )",
               "generatePathProperty": true
             }
           },

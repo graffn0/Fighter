@@ -15,16 +15,28 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)fsharp.core\5.0.1\contentFiles\any\netstandard2.0\FSharp.Core.xml" Condition="Exists('$(NuGetPackageRoot)fsharp.core\5.0.1\contentFiles\any\netstandard2.0\FSharp.Core.xml')">
+      <NuGetPackageId>FSharp.Core</NuGetPackageId>
+      <NuGetPackageVersion>5.0.1</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>FSharp.Core.xml</TargetPath>
+      <Private>True</Private>
+      <Link>FSharp.Core.xml</Link>
+    </None>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgSystem_Runtime Condition=" '$(PkgSystem_Runtime)' == '' ">C:\Users\Battl\.nuget\packages\system.runtime\4.3.1</PkgSystem_Runtime>
     <PkgProto_Actor Condition=" '$(PkgProto_Actor)' == '' ">C:\Users\Battl\.nuget\packages\proto.actor\0.2.1-alpha.0.27</PkgProto_Actor>
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Battl\.nuget\packages\newtonsoft.json\12.0.3</PkgNewtonsoft_Json>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Battl\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
-    <PkgEcsRx_ReactiveData Condition=" '$(PkgEcsRx_ReactiveData)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.reactivedata\3.11.68</PkgEcsRx_ReactiveData>
-    <PkgEcsRx Condition=" '$(PkgEcsRx)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx\3.11.68</PkgEcsRx>
-    <PkgEcsRx_Infrastructure Condition=" '$(PkgEcsRx_Infrastructure)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.infrastructure\3.11.68</PkgEcsRx_Infrastructure>
-    <PkgEcsRx_Plugins_ReactiveSystems Condition=" '$(PkgEcsRx_Plugins_ReactiveSystems)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.plugins.reactivesystems\3.11.68</PkgEcsRx_Plugins_ReactiveSystems>
-    <PkgEcsRx_Plugins_Views Condition=" '$(PkgEcsRx_Plugins_Views)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.plugins.views\3.11.68</PkgEcsRx_Plugins_Views>
-    <PkgEcsRx_Infrastructure_Ninject Condition=" '$(PkgEcsRx_Infrastructure_Ninject)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.infrastructure.ninject\3.11.68</PkgEcsRx_Infrastructure_Ninject>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Battl\.nuget\packages\newtonsoft.json\13.0.1</PkgNewtonsoft_Json>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Battl\.nuget\packages\fsharp.core\5.0.1</PkgFSharp_Core>
+    <PkgEcsRx_ReactiveData Condition=" '$(PkgEcsRx_ReactiveData)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.reactivedata\4.1.97</PkgEcsRx_ReactiveData>
+    <PkgEcsRx Condition=" '$(PkgEcsRx)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx\4.1.97</PkgEcsRx>
+    <PkgEcsRx_Infrastructure Condition=" '$(PkgEcsRx_Infrastructure)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.infrastructure\4.1.97</PkgEcsRx_Infrastructure>
+    <PkgEcsRx_Plugins_ReactiveSystems Condition=" '$(PkgEcsRx_Plugins_ReactiveSystems)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.plugins.reactivesystems\4.1.97</PkgEcsRx_Plugins_ReactiveSystems>
+    <PkgEcsRx_Plugins_Views Condition=" '$(PkgEcsRx_Plugins_Views)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.plugins.views\4.1.97</PkgEcsRx_Plugins_Views>
+    <PkgEcsRx_Infrastructure_Ninject Condition=" '$(PkgEcsRx_Infrastructure_Ninject)' == '' ">C:\Users\Battl\.nuget\packages\ecsrx.infrastructure.ninject\4.1.97</PkgEcsRx_Infrastructure_Ninject>
   </PropertyGroup>
 </Project>
