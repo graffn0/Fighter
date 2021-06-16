@@ -29,6 +29,7 @@
     <Compile Include="Systems\MovementSystem.fs" />
     <Compile Include="Systems\ViewResolver.fs" />
     <Compile Include="Systems\StateSystems.fs" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
     <PackageReference Include="EcsRx.Plugins.ReactiveSystems" Version="4.1.97" />
     <PackageReference Include="EcsRx.ReactiveData" Version="4.1.97" />

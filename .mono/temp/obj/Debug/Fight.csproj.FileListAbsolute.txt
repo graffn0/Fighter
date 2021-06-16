@@ -97,11 +97,8 @@ C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Collections.Immutable
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Memory.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Reactive.dll
-C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Reactive.Core.dll
-C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Reactive.Linq.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\System.ValueTuple.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\cs\FSharp.Core.resources.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\de\FSharp.Core.resources.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\es\FSharp.Core.resources.dll
@@ -122,3 +119,6 @@ C:\Users\Battl\Desktop\Fighter\.mono\temp\obj\Debug\Fight.csproj.CoreCompileInpu
 C:\Users\Battl\Desktop\Fighter\.mono\temp\obj\Debug\Fight.csproj.CopyComplete
 C:\Users\Battl\Desktop\Fighter\.mono\temp\obj\Debug\Fight.dll
 C:\Users\Battl\Desktop\Fighter\.mono\temp\obj\Debug\Fight.pdb
+C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\FSharp.Core.xml
+C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\SystemsRx.dll
+C:\Users\Battl\Desktop\Fighter\.mono\temp\bin\Debug\SystemsRx.Infrastructure.dll

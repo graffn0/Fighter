@@ -3,13 +3,13 @@
 open Fighter
 open Godot
 open EcsRx.Collections.Database
-open EcsRx.Events
 open EcsRx.Groups
 open EcsRx.Entities
 open EcsRx.Extensions
 open EcsRx.Plugins.Views.Components
 open EcsRx.Plugins.Views.Systems
 open EcsRx.Plugins.Views.ViewHandlers
+open SystemsRx.Events
 open Components.UI
 open Components.Node
 open Components.Combat

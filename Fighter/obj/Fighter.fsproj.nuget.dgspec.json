@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj": {}
+    "C:\\Users\\Battl\\Desktop\\Fighter\\Fighter\\Fighter.fsproj": {}
   },
   "projects": {
-    "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj": {
+    "C:\\Users\\Battl\\Desktop\\Fighter\\Fighter\\Fighter.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj",
+        "projectUniqueName": "C:\\Users\\Battl\\Desktop\\Fighter\\Fighter\\Fighter.fsproj",
         "projectName": "Fighter",
-        "projectPath": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj",
+        "projectPath": "C:\\Users\\Battl\\Desktop\\Fighter\\Fighter\\Fighter.fsproj",
         "packagesPath": "C:\\Users\\Battl\\.nuget\\packages\\",
-        "outputPath": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\obj\\",
+        "outputPath": "C:\\Users\\Battl\\Desktop\\Fighter\\Fighter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Battl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -73,6 +73,11 @@
             "Proto.Actor": {
               "target": "Package",
               "version": "[0.2.1-alpha.0.27, )",
+              "generatePathProperty": true
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[5.0.0, )",
               "generatePathProperty": true
             },
             "System.Runtime": {

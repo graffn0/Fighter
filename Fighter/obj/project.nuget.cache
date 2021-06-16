@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aHFoSSaSpJEK5sCghUcdyIK4PWOsshrb+ccHhpEEEy+qTmcRPyKZTZ/qmxEhK1BYCdZzTmfIIN3MVA5+3O0rTg==",
+  "dgSpecHash": "LDgNmElbWxrK86u7lyl1NCzprNBOrUVIjev8TevZLXKPPVE3FsAjGFNAqgCA3b+I0Jh8k7dJ4yXgE/in+tTKsw==",
   "success": true,
-  "projectFilePath": "C:\\USERS\\BATTL\\DESKTOP\\FIGHTER\\Fighter\\Fighter.fsproj",
+  "projectFilePath": "C:\\Users\\Battl\\Desktop\\Fighter\\Fighter\\Fighter.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\Battl\\.nuget\\packages\\ecsrx\\4.1.97\\ecsrx.4.1.97.nupkg.sha512",
     "C:\\Users\\Battl\\.nuget\\packages\\ecsrx.infrastructure\\4.1.97\\ecsrx.infrastructure.4.1.97.nupkg.sha512",
@@ -21,8 +21,10 @@
     "C:\\Users\\Battl\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\Battl\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Battl\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\Battl\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\Battl\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512",
-    "C:\\Users\\Battl\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Battl\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\Battl\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Battl\\.nuget\\packages\\systemsrx\\4.1.97\\systemsrx.4.1.97.nupkg.sha512",
     "C:\\Users\\Battl\\.nuget\\packages\\systemsrx.infrastructure\\4.1.97\\systemsrx.infrastructure.4.1.97.nupkg.sha512"
   ],

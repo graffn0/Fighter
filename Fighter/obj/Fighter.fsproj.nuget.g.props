@@ -29,6 +29,7 @@
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgSystem_Runtime Condition=" '$(PkgSystem_Runtime)' == '' ">C:\Users\Battl\.nuget\packages\system.runtime\4.3.1</PkgSystem_Runtime>
+    <PkgSystem_Reactive Condition=" '$(PkgSystem_Reactive)' == '' ">C:\Users\Battl\.nuget\packages\system.reactive\5.0.0</PkgSystem_Reactive>
     <PkgProto_Actor Condition=" '$(PkgProto_Actor)' == '' ">C:\Users\Battl\.nuget\packages\proto.actor\0.2.1-alpha.0.27</PkgProto_Actor>
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Battl\.nuget\packages\newtonsoft.json\13.0.1</PkgNewtonsoft_Json>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Battl\.nuget\packages\fsharp.core\5.0.1</PkgFSharp_Core>

@@ -2,20 +2,20 @@
 
 open System.Linq
 open Godot
-open EcsRx.Extensions
-open EcsRx.Events
 open EcsRx.Collections
 open EcsRx.Collections.Database
-open EcsRx.Executor
 open EcsRx.Infrastructure
-open EcsRx.Infrastructure.Dependencies
-open EcsRx.Infrastructure.Extensions
 open EcsRx.Infrastructure.Modules
 open EcsRx.Infrastructure.Ninject
-open EcsRx.Infrastructure.Plugins
 open EcsRx.Plugins.ReactiveSystems
 open EcsRx.Plugins.Views
-open EcsRx.Systems
+open SystemsRx.Executor
+open SystemsRx.Events
+open SystemsRx.Infrastructure.Dependencies
+open SystemsRx.Infrastructure.Extensions;
+open SystemsRx.Infrastructure.Modules
+open SystemsRx.Infrastructure.Plugins
+open SystemsRx.Systems
 
 [<AbstractClass>]
 type GodotApplication() = 
@@ -43,7 +43,7 @@ type GodotApplication() =
             with get() = plugins
 
         member this.StartApplication() =
-            let registerPlugin(plugin: IEcsRxPlugin) =
+            let registerPlugin(plugin: ISystemsRxPlugin) =
                 plugins <- plugins.Append(plugin)
 
             let loadPlugins() =
@@ -51,6 +51,7 @@ type GodotApplication() =
                 registerPlugin(new ReactiveSystemsPlugin())
 
             let loadModules() =
+                this.Container.LoadModule<EcsRxInfrastructureModule>()
                 this.Container.LoadModule<FrameworkModule>()
 
             let resolveApplicationDependencies() =
@@ -75,12 +76,15 @@ type GodotApplication() =
                 this.StartAllBoundSystems()
 
             let setupPlugins() =
-                this.Plugins.ForEachRun(fun x -> x.SetupDependencies(this.Container))
+                for x in this.Plugins do 
+                    x.SetupDependencies(this.Container)
 
             let startPluginSystems() =
-                this.Plugins
-                    .SelectMany(fun x -> x.GetSystemsForRegistration(this.Container))
-                    .ForEachRun(fun x -> this.SystemExecutor.AddSystem(x))
+                let systems = 
+                    this.Plugins.SelectMany(fun x -> 
+                        x.GetSystemsForRegistration(this.Container))
+                for x in systems do
+                    this.SystemExecutor.AddSystem(x)
 
             loadModules()
             loadPlugins()
@@ -93,7 +97,7 @@ type GodotApplication() =
         member this.StopApplication() =
             let stopAndUnbindAllSystems() =
                 let allSystems = this.SystemExecutor.Systems.ToList()
-                allSystems.ForEachRun(fun x -> this.SystemExecutor.RemoveSystem(x))
+                allSystems.ForEach(fun x -> this.SystemExecutor.RemoveSystem(x))
                 this.Container.Unbind<ISystem>()
             stopAndUnbindAllSystems() }
 
